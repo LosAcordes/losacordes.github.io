@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Acordesss 🗣️</title>
+    <!-- Google Fonts for the title -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+    <!-- Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
     <script src="songs.js"></script>
     <style>
+        /* --- 1. Root Variables and Theming --- */
         :root {
             --light-bg: #FDFBF6; --light-text: #1a1a1a; --light-border: #1a1a1a; --light-soft-text: #555;
             --dark-bg: #1a1a1a; --dark-text: #FDFBF6; --dark-border: #FDFBF6; --dark-soft-text: #aaa;
@@ -19,60 +22,164 @@
         body[data-theme='dark'] {
             --background: var(--dark-bg); --text-color: var(--dark-text); --border-color: var(--dark-border); --soft-text-color: var(--dark-soft-text);
         }
+
+        /* --- 2. General Body and Typography --- */
         body {
             font-family: 'Courier New', Courier, monospace;
-            background-color: var(--background); color: var(--text-color); margin: 0; padding: 1.5rem;
+            background-color: var(--background);
+            color: var(--text-color);
+            margin: 0;
+            padding: 1.5rem;
             transition: background-color 0.2s ease, color 0.2s ease;
         }
-        .main-container, .detail-content { max-width: 800px; margin: 0 auto; }
-        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem; }
-        h1 { font-family: 'Chakra Petch', sans-serif; font-size: 2.2rem; letter-spacing: 2px; margin: 0; text-align: center; flex-grow: 1; }
+        h1 {
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+        }
         .grayscale { filter: grayscale(100%); }
-        #theme-toggle { font-family: inherit; background: none; border: none; cursor: pointer; padding: 0.5rem; width: 40px; height: 40px; font-size: 1.5rem; display: flex; align-items: center; justify-content: center; }
-        #search-bar { width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 0; font-size: 1rem; background-color: var(--background); color: var(--text-color); font-family: inherit; margin-bottom: 2rem; box-sizing: border-box; }
+
+        /* --- 3. Layout Containers --- */
+        .main-container, .detail-content { max-width: 800px; margin: 0 auto; }
+
+        /* --- 4. Header Elements --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+        #theme-toggle {
+            font-family: inherit;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            width: 40px;
+            height: 40px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* --- 5. Main View (List) --- */
+        #search-bar {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0;
+            font-size: 1rem;
+            background-color: var(--background);
+            color: var(--text-color);
+            font-family: inherit;
+            margin-bottom: 2rem;
+            box-sizing: border-box;
+        }
         #song-list { display: grid; gap: 1rem; }
-        .song-card { background-color: var(--background); border: 1px solid var(--border-color); border-radius: 0; padding: 1.5rem; cursor: pointer; transition: transform var(--anim-speed) ease, box-shadow var(--anim-speed) ease; }
-        .song-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        #no-results {
+            text-align: center;
+            color: var(--soft-text-color);
+            padding: 2rem 0;
+        }
+        .song-card {
+            background-color: var(--background);
+            border: 1px solid var(--border-color);
+            border-radius: 0;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: transform var(--anim-speed) ease, box-shadow var(--anim-speed) ease;
+        }
+        .song-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
         .song-card h3 { margin: 0; font-size: 1.5rem; }
         .song-card p { margin: 0.25rem 0 0; color: var(--soft-text-color); }
-        #song-detail-view { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--background); overflow-y: auto; padding: 1.5rem; box-sizing: border-box; }
-        #back-button { font-family: inherit; background: none; border: 1px solid var(--border-color); color: var(--text-color); cursor: pointer; padding: 0.5rem 1rem; font-size: 1rem; margin-bottom: 2rem; }
+
+        /* --- 6. Detail View --- */
+        #song-detail-view {
+            display: block; /* Display is controlled by the 'hidden' class */
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: var(--background);
+            overflow-y: auto;
+            padding: 1.5rem;
+            box-sizing: border-box;
+        }
+        #back-button {
+            font-family: inherit;
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
         .detail-content h2 { font-size: 2.2rem; margin-bottom: 0.5rem; }
         .detail-content .artist-name { font-size: 1.2rem; color: var(--soft-text-color); margin-top: 0; margin-bottom: 1rem; }
         .song-meta { display: flex; justify-content: space-between; color: var(--soft-text-color); font-size: 0.9rem; margin-bottom: 1rem; }
         .separator { border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0; }
+        .chords-block { font-weight: bold; }
         .chords-block, .lyrics-block { white-space: pre-wrap; word-break: break-word; margin: 0; font-size: 1.1rem; line-height: 1.7; font-family: inherit; }
-        .chord-info { color: var(--soft-text-color); }
+        .chord-info { color: var(--soft-text-color); font-weight: normal; }
+
+        /* --- 7. Custom Audio Player --- */
         .custom-audio-player { display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; }
-        .play-pause-btn { background: none; border: 1px solid var(--border-color); color: var(--text-color); cursor: pointer; width: 40px; height: 40px; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 0; line-height: 1; }
+        .play-pause-btn {
+            background: none;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            cursor: pointer;
+            width: 40px; height: 40px;
+            font-size: 1.2rem;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+            padding: 0;
+            line-height: 1;
+            /* No border-radius for a square button */
+        }
         .progress-bar-container { width: 100%; height: 10px; border: 1px solid var(--border-color); cursor: pointer; }
         .progress-bar { width: 0; height: 100%; background-color: var(--text-color); }
-        /* Animations */
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* --- 8. Animations --- */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         .fade-in { animation: fadeIn var(--anim-speed) ease forwards; }
-        .view { transition: opacity var(--anim-speed) ease; }
-        .view.fading-out { opacity: 0; }
+        .view { transition: opacity var(--anim-speed) ease, visibility var(--anim-speed); }
+        .view.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+        
+        /* --- 9. Media Queries --- */
         @media (min-width: 600px) { #song-list { grid-template-columns: repeat(2, 1fr); } }
     </style>
 </head>
 <body data-theme="light">
 
+    <!-- Main view with the list of songs -->
     <div class="main-container view">
         <header>
             <h1>Los Acordesss <span class="grayscale">🗣️</span></h1>
-            <button id="theme-toggle" title="Cambiar modo"></button>
+            <button id="theme-toggle" aria-label="Cambiar modo de color"></button>
         </header>
         <input type="text" id="search-bar" placeholder="Buscar canción ...">
         <div id="song-list"></div>
     </div>
 
-    <div id="song-detail-view" class="view">
+    <!-- Hidden view for a single song's details -->
+    <div id="song-detail-view" class="view hidden">
         <button id="back-button">&lt; Volver</button>
         <div id="song-detail-content" class="detail-content"></div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // --- DOM Element References ---
             const mainContainer = document.querySelector('.main-container');
             const songListView = document.getElementById('song-list');
             const searchBar = document.getElementById('search-bar');
@@ -82,11 +189,21 @@
             const themeToggle = document.getElementById('theme-toggle');
             const body = document.body;
 
-            const sunIcon = '☀️'; const moonIcon = '🌙'; const playIcon = '▶'; const pauseIcon = '❚❚';
+            // --- Constants ---
+            const ICONS = { sun: '☀️', moon: '🌙', play: '▶', pause: '❚❚' };
             
+            // --- Initialization ---
             songs.sort((a, b) => a.name.localeCompare(b.name));
             const fuse = new Fuse(songs, { keys: ['name', 'artist'], includeScore: true, threshold: 0.4 });
 
+            // --- Core Functions ---
+
+            /**
+             * Formats a multi-line chord string to have aligned separators.
+             * It processes each line, pads chords to the same length, and preserves annotations.
+             * @param {string} chordString - The raw chord string from the song object.
+             * @returns {string} - An HTML string with <pre> tags for display.
+             */
             const formatChords = (chordString) => {
                 if (!chordString) return '';
                 const lines = chordString.split('\n');
@@ -94,33 +211,42 @@
                     const trimmedLine = line.trim();
                     if (trimmedLine === '') return '';
                     if (trimmedLine.startsWith('[') && trimmedLine.endsWith(']')) return `<span class="chord-info">${trimmedLine}</span>`;
+                    
                     let chordPart = trimmedLine, trailingAnnotation = '';
                     const annotationMatch = trimmedLine.match(/(.*?)(\s*\[.*\]\s*)$/);
-                    if (annotationMatch) { chordPart = annotationMatch[1].trim(); trailingAnnotation = ` <span class="chord-info">${annotationMatch[2].trim()}</span>`; }
+                    if (annotationMatch) {
+                        chordPart = annotationMatch[1].trim();
+                        trailingAnnotation = ` <span class="chord-info">${annotationMatch[2].trim()}</span>`;
+                    }
+                    
                     const chords = chordPart.split('-').map(c => c.trim());
                     if (chords.length <= 1) return chordPart + trailingAnnotation;
+                    
                     const maxLength = Math.max(...chords.map(c => c.length));
                     const paddedChords = chords.map(c => c.padEnd(maxLength, ' '));
+                    
                     return paddedChords.join(' - ') + trailingAnnotation;
                 });
                 return `<pre class="chords-block">${processedLines.join('\n')}</pre>`;
             };
 
+            /**
+             * Populates the detail view with a specific song's data.
+             * @param {object} song - The song object to display.
+             */
             const populateSongDetail = (song) => {
-                let artistHtml = song.artist ? `<p class="artist-name">${song.artist}</p>` : '';
-                let metaInfoHtml = (song.key || song.bpm) ? `<div class="song-meta"><span>${song.key || ''}</span><span>${song.bpm ? song.bpm + ' BPM' : ''}</span></div>` : '';
-                let chordsHtml = song.chords ? `<hr class="separator">${formatChords(song.chords)}` : '';
-                let lyricsHtml = song.lyrics ? `<hr class="separator"><pre class="lyrics-block">${song.lyrics}</pre>` : '';
-                let audioHtml = '';
-                if (song.hasAudio) {
-                    audioHtml = `
-                        <div class="custom-audio-player">
-                            <button class="play-pause-btn grayscale" title="Play/Pause">${playIcon}</button>
-                            <div class="progress-bar-container"><div class="progress-bar"></div></div>
-                        </div>
-                        <audio class="audio-element" src="audio/${song.name}.mp3" style="display:none;"></audio>
-                    `;
-                }
+                const artistHtml = song.artist ? `<p class="artist-name">${song.artist}</p>` : '';
+                const metaInfoHtml = (song.key || song.bpm) ? `<div class="song-meta"><span>${song.key || ''}</span><span>${song.bpm ? song.bpm + ' BPM' : ''}</span></div>` : '';
+                const chordsHtml = song.chords ? `<hr class="separator">${formatChords(song.chords)}` : '';
+                const lyricsHtml = song.lyrics ? `<hr class="separator"><pre class="lyrics-block">${song.lyrics}</pre>` : '';
+                const audioHtml = song.hasAudio ? `
+                    <div class="custom-audio-player">
+                        <button class="play-pause-btn grayscale" aria-label="Reproducir o pausar audio">${ICONS.play}</button>
+                        <div class="progress-bar-container"><div class="progress-bar"></div></div>
+                    </div>
+                    <audio class="audio-element" src="audio/${song.name}.mp3" preload="metadata"></audio>
+                ` : '';
+
                 songDetailContent.innerHTML = `
                     <h2>${song.name}</h2>
                     ${artistHtml}
@@ -132,16 +258,21 @@
                 setupAudioPlayer();
             };
 
+            /**
+             * Sets up event listeners for the custom audio player.
+             */
             const setupAudioPlayer = () => {
                 const player = songDetailContent.querySelector('.custom-audio-player');
                 if (!player) return;
+
                 const audio = songDetailContent.querySelector('.audio-element');
                 const playPauseBtn = player.querySelector('.play-pause-btn');
                 const progressContainer = player.querySelector('.progress-bar-container');
                 const progressBar = player.querySelector('.progress-bar');
+
                 playPauseBtn.onclick = () => audio.paused ? audio.play() : audio.pause();
-                audio.onplay = () => playPauseBtn.innerHTML = pauseIcon;
-                audio.onpause = () => playPauseBtn.innerHTML = playIcon;
+                audio.onplay = () => playPauseBtn.innerHTML = ICONS.pause;
+                audio.onpause = () => playPauseBtn.innerHTML = ICONS.play;
                 audio.ontimeupdate = () => { progressBar.style.width = audio.duration > 0 ? `${(audio.currentTime / audio.duration) * 100}%` : '0%'; };
                 progressContainer.onclick = (e) => {
                     if (audio.duration > 0) {
@@ -151,21 +282,30 @@
                 };
             };
             
+            /**
+             * Renders the list of songs in the main view.
+             * @param {array} songsToDisplay - An array of song objects to render.
+             */
             const displaySongs = (songsToDisplay) => {
+                if (songsToDisplay.length === 0) {
+                    songListView.innerHTML = '<p id="no-results">No se encontraron canciones.</p>';
+                    return;
+                }
                 songListView.innerHTML = '';
                 songsToDisplay.forEach(songData => {
-                    const song = songData.item || songData;
+                    const song = songData.item || songData; // Accommodate Fuse.js results
                     const songCard = document.createElement('div');
                     songCard.classList.add('song-card');
                     songCard.innerHTML = `<h3>${song.name}</h3>${song.artist ? `<p>${song.artist}</p>` : ''}`;
+                    
                     songCard.addEventListener('click', () => {
-                        mainContainer.classList.add('fading-out');
+                        // Animate out the main view, then switch content and animate in the detail view.
+                        mainContainer.classList.add('hidden');
                         setTimeout(() => {
                             mainContainer.style.display = 'none';
-                            mainContainer.classList.remove('fading-out');
                             populateSongDetail(song);
                             songDetailView.style.display = 'block';
-                            songDetailView.classList.add('fade-in');
+                            songDetailView.classList.remove('hidden');
                             window.scrollTo(0, 0);
                         }, 300);
                     });
@@ -173,35 +313,36 @@
                 });
             };
 
+            // --- Event Listeners ---
             backButton.addEventListener('click', () => {
-                songDetailView.classList.add('fading-out');
+                songDetailView.classList.add('hidden');
                 setTimeout(() => {
                     songDetailView.style.display = 'none';
-                    songDetailView.classList.remove('fading-out');
-                    songDetailView.classList.remove('fade-in'); // Reset for next time
-                    songDetailContent.innerHTML = '';
+                    songDetailContent.innerHTML = ''; // Clear content to stop audio
                     mainContainer.style.display = 'block';
-                    mainContainer.classList.add('fade-in');
-                    setTimeout(() => mainContainer.classList.remove('fade-in'), 300);
+                    mainContainer.classList.remove('hidden');
                 }, 300);
             });
 
-            searchBar.addEventListener('keyup', (e) => {
-                const searchTerm = e.target.value.trim();
+            searchBar.addEventListener('keyup', () => {
+                const searchTerm = searchBar.value.trim();
                 displaySongs(searchTerm === '' ? songs : fuse.search(searchTerm));
             });
             
+            // --- Theme Management ---
             const applyTheme = (theme) => {
                 body.setAttribute('data-theme', theme);
-                themeToggle.innerHTML = `<span class="grayscale">${theme === 'dark' ? sunIcon : moonIcon}</span>`;
+                themeToggle.innerHTML = `<span class="grayscale">${theme === 'dark' ? ICONS.sun : ICONS.moon}</span>`;
                 localStorage.setItem('theme', theme);
             };
+
             themeToggle.addEventListener('click', () => {
                 const newTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
                 applyTheme(newTheme);
             });
             
-            const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            // --- Initial Page Load ---
+            const savedTheme = localStorage.getItem('theme') || 'light'; // Default to light theme
             applyTheme(savedTheme);
             
             mainContainer.classList.add('fade-in');
