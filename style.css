@@ -1,0 +1,28 @@
+a:link, a:visited { color: black; }
+a:hover { color: orange; }
+a { text-decoration: none; }
+
+html {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  background-color: #fff8f0;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  /* display: flex; idk if i should use flex or table*/
+  /* justify-content: center; */
+  display: table;
+  margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+.links {
+  font-size: 1.6rem;
+}
+
+.lyrics {
+  white-space: pre-line;
+}

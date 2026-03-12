@@ -72,10 +72,10 @@ La merda se'ns acumula
 Ja ho netejarem després
 
 Welcome my friends`,
-	hasAudio: true
+    hasAudio: true
   },
-  
- 
+
+
 
   {
     name: "Corbelles",
@@ -169,9 +169,9 @@ Hi creix una flor al mur, vol ser futur, és present, és memòria
 Tempestes venen del sud, sonen corbelles que tallen la boira
 Hi creix una flor al mur, vol ser futur, és present, és memòria`,
     hasAudio: true
-  },  
-   
- 
+  },
+
+
 
   {
     name: "Esbarzers (Remix La Gossa Sorda)",
@@ -229,9 +229,9 @@ No sé perquè acabe sempre en el teu carrer
 M'acoste allí quan mor el dia
 I tu sempre m'arreplegues l'ànima dels peus`,
     hasAudio: true
-  },  
-   
- 
+  },
+
+
 
   {
     name: "Al mar!",
@@ -274,9 +274,9 @@ Hi ha un xiringuito amb quatre pins al fons
 Tu i jo asseguts a la barra d’un bar
 Sona bona música i som davant del mar`,
     hasAudio: true
-  },  
-   
- 
+  },
+
+
 
   {
     name: "Killing in the Name",
@@ -398,9 +398,9 @@ Fuck you, I won't do what you tell me
 Motherfucker
 Huh!`,
     hasAudio: true
-  },  
-   
- 
+  },
+
+
 
   {
     name: "Zapatillas",
@@ -463,9 +463,9 @@ Me da pena tanta tontería
 Quiero un poquito de normalidad
 Pero a ver, mírame, y dime tronco, no veo ni un sitio y no puedo aparcar`,
     hasAudio: true
-  },  
-   
- 
+  },
+
+
 
   {
     name: "Mari Carmen",
@@ -515,9 +515,9 @@ Tu hijo es el último en salir de todas las raves
 Tú no lo sabes, tú no lo sabes
 Tu hijo es el último en salir de todas las raves`,
     hasAudio: true
-  },  
-   
- 
+  },
+
+
 
   {
     name: "Sweet Child O' Mine",
@@ -581,9 +581,9 @@ Woah-oh, where do we go now?
 No, no, no, no, no, no, no
 Sweet child, sweet child of mine`,
     hasAudio: true
-  },  
-   
- 
+  },
+
+
 
   {
     name: "Sweet Home Alabama",
@@ -645,9 +645,9 @@ Where the skies are so blue
 Sweet home Alabama (Lordy)
 Lord, I'm coming home to you (oh, oh, yeah)`,
     hasAudio: true
-  },  
-   
- 
+  },
+
+
 
   {
     name: "Come Together",
@@ -731,9 +731,9 @@ Come together, yeah
 Come together, yeah
 Come together, yeah`,
     hasAudio: true
-  },  
-   
- 
+  },
+
+
 
   {
     name: "Despacito",
@@ -854,9 +854,9 @@ Y que olvides tu apellido (DY)
 
 Despacito`,
     hasAudio: true
-  },  
-   
- 
+  },
+
+
 
   {
     name: "Tusa",
@@ -936,10 +936,10 @@ Ey, Karol G (ajá, Karol G)
 Nicki Minaj (ah, ajá), ey
 "The Queen" with "The Queen" (ajá, jajaja)`,
     hasAudio: true
-  },  
- 
-   
- 
+  },
+
+
+
 
   {
     name: "Seven Nation Army",
@@ -985,10 +985,10 @@ And I will think no more
 And the stains coming from my blood
 Tell me: Go back home`,
     hasAudio: true
-  },  
- 
-   
- 
+  },
+
+
+
 
   {
     name: "Coti X Coti",
@@ -1035,10 +1035,10 @@ No em crec històries inventades
 De tu ja no em puc creure res, no
 (Visca!)`,
     hasAudio: true
-  },  
- 
-   
- 
+  },
+
+
+
 
   {
     name: "Cul",
@@ -1119,10 +1119,10 @@ Cul-cul, cul-cul, cul-cul, cul-cul, cul-cul
 Cul-cul-cul-cul, cul-cul-cul
 Cul`,
     hasAudio: true
-  },  
- 
-   
- 
+  },
+
+
+
 
   {
     name: "Fent voltes per Palma",
@@ -1173,10 +1173,10 @@ i encara no he trobat aparcament...
 i encara no he trobat aparcament...
 i encara no he trobat aparcament`,
     hasAudio: true
-  },  
- 
-   
- 
+  },
+
+
+
 
   {
     name: "LA PENÚLTIMA",
@@ -1252,10 +1252,10 @@ Una última cançó
 Que ho deixe enrere tot
 Que siga la penúltima que l'última em fa por`,
     hasAudio: true
-  },  
- 
-   
- 
+  },
+
+
+
 
   {
     name: "Smells Like Teen Spirit",
@@ -1325,7 +1325,7 @@ A denial, a denial, a denial
 A denial, a denial, a denial
 A denial, a denial, a denial`,
     hasAudio: true
-  },  
+  },
 
 
 ];
