@@ -1,10 +1,30 @@
-const a = document.getElementById("aud"),
-      b = document.getElementById("btn"),
-      bar = document.getElementById("bar"),
-      t = document.getElementById("time"),
-      fmt = s => Math.floor(s/60) + ':' + String(Math.floor(s%60)).padStart(2, '0');
+const links= document.getElementById("links");
+const searchBar = document.getElementById("searchBar");
+const canciones = [
+  { title: "Al mar! - Manel", link: "Al_mar!.html" },
+  { title: "Come Together - The Beatles", link: "Come_Together.html" },
+  { title: "Corbelles - Zoo", link: "Corbelles.html" },
+];
 
-b.onclick = () => { a.paused ? a.play() : a.pause(); b.innerText = a.paused ? "▶" : "❚❚"; };
-a.onloadedmetadata = () => bar.max = a.duration;
-a.ontimeupdate = () => { bar.value = a.currentTime; t.innerText = fmt(a.currentTime) + " / " + fmt(a.duration || 0); };
-bar.oninput = () => a.currentTime = bar.value;
+searchBar.addEventListener("keyup", (e) => {
+  const searchString = e.target.value.toLowerCase();
+  const filteredSongs = canciones.filter((song) => {
+    return song.title.toLowerCase().includes(searchString);
+  });
+  displaySongs(filteredSongs);
+});
+
+const displaySongs = (songs) => {
+  const htmlString = songs
+    .map((song) => {
+      return `
+              <a href="${song.link}">${song.title}</a>
+              <br>
+            `;
+    })
+    .join(""); // remove commas
+
+  links.innerHTML = htmlString; // inject HTML string into the <ul>
+};
+
+displaySongs(canciones);
