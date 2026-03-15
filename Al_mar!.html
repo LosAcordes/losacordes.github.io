@@ -8,33 +8,36 @@
   </head>
 
   <body>
-    <div class="container">
-      <a href="index.html">⮜ Inicio</a>
-      <h1>Al mar!</h1>
-      <hr/>
+    <a href="index.html">⌂ Inicio</a>
+    <h1>Al mar!</h1>
+    <hr/>
 
-      <p style="text-align:left;">
-          Manel
-        <span style="float: center;">
-        <!-- WHY ISNT THIS WORKING -->
-          -
-          </span>
-          <span style="float:right;">
-              150 BPM
-          </span>
-      </p>
+    <div class="info">
+      <p>Manel</p>
+      <p>Dm</p>
+      <p>150 BPM</p>
+    </div>
 
-      <pre><code>
+    <div class="chords-scroll">
+      <p class="chords">
         Dm - F - C - Bb
         (Igual que Tobogàn)
-      </code></pre>
-
-      <p class="lyrics">
-        Tu i jo hem sopat en bons restaurants
-        Tu i jo hem ballat a la llum d’un fanal
-        Tu i jo volavem en un ford fiesta groc
-        Tu i jo hem cantat a la vora del foc
       </p>
     </div>
+
+    <div class="player">
+      <audio id="aud" src="audio/Al_mar!.mp3"></audio>
+      <button id="btn">▶</button>
+      <input type="range" id="bar" value="0">
+      <span id="time">0:00 / 0:00</span>
+    </div>
+
+    <p class="lyrics">
+      Tu i jo hem sopat en bons restaurants
+      Tu i jo hem ballat a la llum d’un fanal
+      Tu i jo volavem en un ford fiesta groc
+      Tu i jo hem cantat a la vora del foc
+    </p>
+    <script src="script.js"></script>
   </body>
 </html>
