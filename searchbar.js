@@ -18,7 +18,7 @@ const displaySongs = (songs) => {
   const htmlString = songs
     .map((song) => {
       return `
-              <a href="${song.link}">${song.title}</a>
+              <a href="songs/${song.link}">${song.title}</a>
               <br>
             `;
     })
