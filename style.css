@@ -4,7 +4,7 @@
   --accent-color: #ea7358;
 }
 .darkmode{
-  --background: #1d1c1b;
+  --background: #1e1e1e;
   --text-color: #fff3e8;
   --accent-color: #ea7358;
 }
@@ -25,6 +25,11 @@ body {
 
 a:link, a:visited { color: var(--text-color); text-decoration: none; }
 a:hover { color: var(--accent-color); }
+
+.inicio {
+  position: absolute;
+  top: 10px;
+}
 
 #theme-switch{
   background: transparent;
