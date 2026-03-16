@@ -1,11 +1,13 @@
 :root{
   --background: #fff8f0;
   --text-color: #160e00;
+  --soft-text-color: #5a554e;
   --accent-color: #ea7358;
 }
 .darkmode{
   --background: #1e1e1e;
   --text-color: #fff3e8;
+  --soft-text-color: #b9b0a7;
   --accent-color: #ea7358;
 }
 
@@ -35,7 +37,7 @@ a:hover { color: var(--accent-color); }
   background: transparent;
   border: none;
   position: absolute;
-  top: 10px;
+  top: 18px;
   right: 10px;
 }
 #theme-switch:hover { border: 2px solid var(--background); }
@@ -47,16 +49,22 @@ a:hover { color: var(--accent-color); }
 
 
 h2 { margin-bottom: 10px; }
+hr {
+  color: var(--text-color);
+  border-bottom: none;
+}
+
 #searchBar {
   color: var(--text-color);
   width: 100%;
-  border: 2px solid dimgray;
+  border: 1px solid var(--text-color);
   background: transparent;
   font-size: 1rem;
   box-sizing: border-box;
   padding: 3px;
 }
 
+#links br { margin-bottom: 1.4rem; }
 #links {
   font-size: 1.6rem;
   padding: 0;
@@ -72,6 +80,7 @@ footer {
 }
 
 .info {
+  color: var(--soft-text-color);
   display: flex;
   justify-content: space-between;
 }
@@ -113,12 +122,12 @@ footer {
 }
 #bar::-webkit-slider-runnable-track {
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: var(--text-color);
 }
 #bar::-moz-range-track {
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: var(--text-color);
 }
 #bar::-webkit-slider-thumb {
