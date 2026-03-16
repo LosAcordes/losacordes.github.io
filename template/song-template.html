@@ -28,12 +28,6 @@
         <p>{bpm}</p>
       </div>
 
-      <div class="chords-scroll">
-        <p class="chords">
-            {acordes}
-        </p>
-      </div>
-
       <div class="player">
         <audio id="audio" src="../audio/{audio}.mp3"></audio>
         <button id="button">▶</button>
@@ -41,8 +35,15 @@
         <span id="time">0:00 / 0:00</span>
       </div>
 
+      <div class="chords-scroll">
+        <p class="chords">
+{acordes}
+        </p>
+      </div>
+
+      <hr/>
       <p class="lyrics">
-            {letra}
+{letra}
       </p>
     </main>
   </body>
