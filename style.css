@@ -61,7 +61,7 @@ hr {
   background: transparent;
   font-size: 1rem;
   box-sizing: border-box;
-  padding: 3px;
+  padding: 7px;
 }
 
 #links {
@@ -74,6 +74,7 @@ hr {
   font-size: 1.3rem;
 }
 
+footer a:link, footer a:visited { color: var(--accent-color); }
 footer {
   text-align: center;
   display: table;

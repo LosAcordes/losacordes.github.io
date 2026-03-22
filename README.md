@@ -11,4 +11,4 @@ Disponible en [losacordes.github.io](losacordes.github.io)
     - Letra
     - Audio
 - Modo claro y oscuro, recordado por el navegador.
-- Páginas de las canciones generadas automáticamente por [un programa de python](template/generator.py) que interpreta [el listado de canciones](template/songs.md) (escrito en Markdown para su sencilla navegación y edición, *por lo que las letras de las canciones se verán mas compactas*).
+- Páginas de las canciones generadas automáticamente por [un programa de python](template/generator.py), que interpreta [una lista de canciones](song-data/) (declaradas en *Markdown* para su sencilla navegación y edición).
