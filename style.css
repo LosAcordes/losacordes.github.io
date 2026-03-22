@@ -1,7 +1,7 @@
 :root{
   --background: #fff8f0;
   --text-color: #160e00;
-  --soft-text-color: #5a554e;
+  --soft-text-color: #494745;
   --accent-color: #ea7358;
 }
 .darkmode{
@@ -64,12 +64,14 @@ hr {
   padding: 3px;
 }
 
-#links br { margin-bottom: 1.4rem; }
 #links {
   font-size: 1.6rem;
   padding: 0;
-  overflow-x: auto;
-  white-space: nowrap;
+}
+
+.soft {
+  color: var(--soft-text-color);
+  font-size: 1.3rem;
 }
 
 footer {
