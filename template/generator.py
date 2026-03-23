@@ -8,7 +8,7 @@ def crear_archivo(titulo, artista, escala, bpm, inicio_acordes, fin_acordes):
     nombre_archivo = archivo.name[:-3]
 
     if nombre_archivo in pdfs:
-        titulo_link = f"<a href='../song-data/{nombre_archivo}.pdf'>{titulo} <span class='emoji'>📄</span></a>"
+        titulo_link = f"<a href=\"../song-data/{nombre_archivo}.pdf\">{titulo} <span class='emoji'>📄</span></a>"
     else: titulo_link = titulo
 
     rellenado = plantilla.format(
