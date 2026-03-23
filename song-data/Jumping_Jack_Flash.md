@@ -1,4 +1,4 @@
-# <a href="../song-data/Jumping_Jack_Flash.pdf">Jumping Jack Flash</a>
+# Jumping Jack Flash
 - The Rolling Stones
 - E (Cambiada de tono)
 - 138 BPM

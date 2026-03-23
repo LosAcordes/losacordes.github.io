@@ -1,4 +1,4 @@
-# <a href="../song-data/I'm_Still_Standing.pdf">I'm Still Standing</a>
+# I'm Still Standing
 - Elton John
 - Bb i Bbm
 - 178 BPM
@@ -8,9 +8,9 @@
 Bbm - Ebm F - Gb Ab [x2]
 
 [Verse 1]
-Bb - Eb - F - Bb
-Cm7 - F - Gm - Eb
-Bb - Eb
+Bb  - Eb - F  - Bb
+Cm7 - F  - Gm - Eb
+Bb  - Eb
 
 [Verse 2 / Verse 3 / Solo]
 Bb - Eb - F - Bb

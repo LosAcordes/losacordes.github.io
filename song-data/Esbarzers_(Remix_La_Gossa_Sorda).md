@@ -5,8 +5,8 @@
 
 ```
 [Intro & Estribillo]
-F#m - A - D - F#m
-D - A - Db - %
+F#m - A - D  - F#m
+D   - A - Db - %
 
 [Verso]
 F#m - A - D - F#m

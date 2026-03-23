@@ -6,14 +6,14 @@
 ```
 [Verso]
 Dm - % - % - %
-A - % - G - %
+A  - % - G - %
 
 [Estribillo]
 Bm - Bm/A G
 
 [Solo]
 Dm - % - % - %
-A - % - % - %
+A  - % - % - %
 ```
 
 Shoot me, shoot me

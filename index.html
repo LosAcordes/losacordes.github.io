@@ -8,6 +8,15 @@
   <script type="text/javascript" src="js/darkmode.js" defer></script>
   <script type="text/javascript" src="js/searchbar.js" defer></script>
   <script type="text/javascript" src="js/actualizacion.js" defer></script>
+  <link rel="manifest" href="./manifest.json"/>
+  <meta name="theme-color" content="#000000"/>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js');
+      });
+    }
+  </script>
 </head>
 
 <body>

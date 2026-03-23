@@ -1,6 +1,6 @@
 # Killing in the Name
 - Rage Against the Machine
-- Dm (y más)
+- Dm
 - 118/92/82 BPM
 
 ```

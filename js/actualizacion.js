@@ -23,7 +23,7 @@ async function fetchLastUpdate() {
     const container = document.getElementById('actualizacion');
     container.innerHTML = `
       <p>
-        Última actualizacion el ${formattedDate}
+        Última actualizacion: ${formattedDate}
         <br/>
         Cambios: ${commitMessage}
       </p>

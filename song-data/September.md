@@ -1,4 +1,4 @@
-# <a href="../song-data/September.pdf">September</a>
+# September
 - Earth Wind & Fire
 - C (Cambiada de tono)
 - 125 BPM

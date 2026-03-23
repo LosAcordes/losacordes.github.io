@@ -1,4 +1,4 @@
-# <a href="../song-data/back_to_friends.pdf">back to friends</a>
+# back to friends
 - sombr
 - Gb
 - 93 BPM
@@ -11,10 +11,10 @@ Gb Ebm Bbm Db
 Gb Ebm Db Bbm
 
 [Chorus]
-Gb - Ebm - Db - Bbm [x2]
+Gb - Ebm - Db  - Bbm [x2]
 
 [Bridge]
-Ebm - % - Bbm - DM [x2]
+Ebm - %  - Bbm - DM [x2]
 
 [Interlude](no se toca)
 Ebm - Bb - Ebm - F

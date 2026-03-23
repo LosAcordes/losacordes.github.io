@@ -1,4 +1,4 @@
-# <a href="../song-data/Don't_Start_Now.pdf">Don't Start Now</a>
+# Don't Start Now
 - Dua Lipa
 - Bm
 - 124 BPM
@@ -8,7 +8,7 @@
 Bm - D - D Em - Fm G
 
 [Verse, Chorus y Bridge]
-G - D - A6 - Em Bm
+G  - D -  A6  - Em Bm
 ```
 
 If you don't wanna see me
