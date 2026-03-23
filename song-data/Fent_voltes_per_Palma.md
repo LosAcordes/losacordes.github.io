@@ -1,4 +1,4 @@
-# Fent voltes per Palma
+# <a href="../song-data/Fent_voltes_per_Palma.pdf">Fent voltes per Palma</a>
 - Xanguito & Tomeu Penya
 - C
 - 123 BPM

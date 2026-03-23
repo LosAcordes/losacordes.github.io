@@ -1,0 +1,74 @@
+# <a href="../song-data/I'm_Still_Standing.pdf">I'm Still Standing</a>
+- Elton John
+- Bb i Bbm
+- 178 BPM
+
+```
+[Intro]
+Bbm - Ebm F - Gb Ab [x2]
+
+[Verse 1]
+Bb - Eb - F - Bb
+Cm7 - F - Gm - Eb
+Bb - Eb
+
+[Verse 2 / Verse 3 / Solo]
+Bb - Eb - F - Bb
+Cm7 - F - Gm - Eb
+Bb
+
+[Chorus]
+Bbm - Fm - Ebm - Gb Ab
+Bbm - Fm - Ebm - F
+Gb Ab - Bbm - Bbm
+
+[Post-Chorus]
+Ebm F - Gb Ab - Bbm
+Ebm F - Gb Ab
+
+[Outro / Fade Out]
+Ebm F - Gb Ab - Bbm [Repeat to fade]
+```
+
+You could never know what it's like
+Your blood, like winter, freezes just like ice
+And there's a cold, lonely light that shines from you
+You'll wind up like the wreck you hide behind that mask you use
+And did you think this fool could never win?
+Well, look at me, I'm a-comin' back again
+I got a taste of love in a simple way
+And if you need to know while I'm still standin', you just fade away
+
+Don't you know, I'm still standin' better than I ever did?
+Lookin' like a true survivor, feelin' like a little kid
+And I'm still standin' after all this time
+Pickin' up the pieces of my life without you on my mind
+
+I'm still standin' (Yeah, yeah, yeah)
+I'm still standin' (Yeah, yeah, yeah)
+
+Once, I never coulda hoped to win
+You're startin' down the road, leavin' me again
+The threats you made were meant to cut me down
+And if our love was just a circus, you'd be a clown by now
+
+You know, I'm still standin' better than I ever did
+Lookin' like a true survivor, feelin' like a little kid
+And I'm still standin' after all this time
+Pickin' up the pieces of my life without you on my mind
+
+I'm still standin' (Yeah, yeah, yeah)
+I'm still standin' (Yeah, yeah, yeah)
+
+Don't you know that I'm still standin' better than I ever did?
+Lookin' like a true survivor, feelin' like a little kid
+And I'm still standin' after all this time
+Pickin' up the pieces of my life without you on my mind
+
+I'm still standin' (Yeah, yeah, yeah)
+I'm still standin' (Yeah, yeah, yeah)
+
+I'm still standin' (Yeah, yeah, yeah)
+I'm still standin' (Yeah, yeah, yeah)
+I'm still standin' (Yeah, yeah, yeah)
+I'm still standin' (Yeah, yeah, yeah)

@@ -1,0 +1,83 @@
+# <a href="../song-data/September.pdf">September</a>
+- Earth Wind & Fire
+- C (Cambiada de tono)
+- 125 BPM
+
+```
+[Intro, Verse i Bridge]
+Cmaj7 Bm Am Bm - Em7 [x3]
+F/G - %
+
+[Chorus]
+Am7 D7 - Bm Em [x3]
+F/G - %
+```
+
+Do you remember
+The twenty-first night of September?
+Love was changin' the minds of pretenders
+While chasin' the clouds away
+Our hearts were ringin'
+In the key that our souls were singin'
+As we danced in the night, remember
+How the stars stole the night away, oh yeah
+
+Hey, hey, hey
+Ba-dee-ya
+Say, do you remember?
+Ba-dee-ya
+Dancin' in September
+Ba-dee-ya
+Never was a cloudy day
+
+Ba-du, ba-du, ba-du, ba-du
+Ba-du, ba-du, ba-du, ba-du
+Ba-du, ba-du, ba-du-da
+Ba-du, yeah
+
+My thoughts are with you
+Holdin' hands with your heart to see you
+Only blue talk and love, remember
+How we knew love was here to stay
+Now December
+Found a love we shared in September
+Only blue talk and love, remember
+True love we share today
+
+Hey, hey, hey (Yeah, yeah, yeah)
+Ba-dee-ya
+Say, do you remember?
+Ba-dee-ya (Oh)
+Dancin' in September
+Ba-dee-ya (Hey)
+Never was a cloudy day
+And we'll say ba-dee-ya (Ba-dee-ya, dee-ya)
+Say, do you remember?
+Ba-dee-ya (Ba-dee-ya, dee-ya)
+Dancin' in September
+Ba-dee-ya (Ba-dee-ya, dee-ya)
+Golden dreams were shiny days (Dee-ya)
+
+The bells was ringin', oh-oh
+Our souls were singin'
+Do you remember never a cloudy day? Yow
+
+And we'll say ba-dee-ya (Ba-dee-ya, dee-ya)
+Say, do you remember?
+Ba-dee-ya (Ba-dee-ya, dee-ya)
+Dancin' in September
+Ba-dee-ya (Ba-dee-ya, dee-ya)
+Never was a cloudy day (Dee-ya)
+And we'll say ba-dee-ya (Ba-dee-ya, dee-ya)
+Say, do you remember?
+Ba-dee-ya (Ba-dee-ya, dee-ya)
+Dancin' in September
+Ba-dee-ya (Ba-dee ya, dee-ya)
+Golden dreams were shiny days (Dee-ya)
+
+Ba-dee-ya, dee-ya, dee-ya
+Ba-dee-ya, dee-ya, dee-ya
+Ba-dee-ya, dee-ya, dee-ya, dee-ya
+Ba-dee-ya, dee-ya, dee-ya
+Ba-dee-ya, dee-ya, dee-ya
+Ba-dee-ya, dee-ya, dee-ya, dee-ya

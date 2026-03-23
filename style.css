@@ -49,6 +49,7 @@ a:hover { color: var(--accent-color); }
 
 
 h2 { margin-bottom: 10px; }
+h1 { filter: grayscale(100%); }
 hr {
   color: var(--text-color);
   border-bottom: none;
