@@ -39,8 +39,9 @@ const displaySongs = (songs) => {
   const htmlString = songs
     .map((song) => {
       return `
-              <a href="songs/${song.link}">${song.title}</a>
-              <br>
+              <li>
+                <a href="songs/${song.link}">${song.title}</a>
+              </li>
             `;
     })
     .join(""); // remove commas

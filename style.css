@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 :root{
   --background: #fff8f0;
   --text-color: #160e00;
   --soft-text-color: #494745;
-  --accent-color: #ea7358;
+  --accent-color: #a84933;
 }
 .darkmode{
   --background: #1e1e1e;
@@ -12,10 +13,14 @@
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Ubuntu Mono', ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
   font-size: 1.2rem;
   background-color: var(--background);
   color: var(--text-color);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .page{
@@ -49,7 +54,10 @@ a:hover { color: var(--accent-color); }
 
 
 h2 { margin-bottom: 10px; }
-h1 { filter: grayscale(100%); }
+.emoji {
+  font-size: 60%;
+  filter: grayscale(100%);
+}
 hr {
   color: var(--text-color);
   border-bottom: none;
@@ -67,8 +75,10 @@ hr {
 
 #links {
   font-size: 1.6rem;
+  list-style: none;
   padding: 0;
 }
+#links li { margin-bottom: 15px; }
 
 .soft {
   color: var(--soft-text-color);
