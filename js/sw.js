@@ -1,4 +1,4 @@
-const CACHE_NAME = 'losacordes-v1.2.2';
+const CACHE_NAME = 'losacordes-v1.2.3';
 
 const urlsToCache =[
   "./",
@@ -25,7 +25,7 @@ const urlsToCache =[
   "./audio/Esbarzers_(Remix_La_Gossa_Sorda).mp3",
   "./audio/Fent_voltes_per_Palma.mp3",
   "./audio/I'm_Still_Standing.mp3",
-  "./audio/Jumping_Jack_Flash.wav",
+  "./audio/Jumping_Jack_Flash.mp3",
   "./audio/Killing_in_the_Name.mp3",
   "./audio/LA_PENULTIMA.mp3",
   "./audio/Mari_Carmen.mp3",
