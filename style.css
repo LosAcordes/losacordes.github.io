@@ -103,7 +103,7 @@ footer {
 .chords{
   display: flex;
   justify-content: center;
-  white-space: pre-line;
+  white-space: pre;
   min-width: max-content;
 }
 

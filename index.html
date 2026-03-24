@@ -10,12 +10,14 @@
   <script type="text/javascript" src="js/darkmode.js" defer></script>
   <script type="module" src="js/searchbar.js"></script>
   <script type="text/javascript" src="js/actualizacion.js" defer></script>
+  <script type="text/javascript" src="js/instalar.js" defer></script>
   <link rel="manifest" href="./manifest.json"/>
-  <meta name="theme-color" content="#000000"/>
+  <meta name="theme-color" content="#fff8f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#160e00" media="(prefers-color-scheme: dark)">
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js');
+        navigator.serviceWorker.register('js/sw.js');
       });
     }
   </script>

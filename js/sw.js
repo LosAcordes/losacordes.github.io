@@ -1,4 +1,4 @@
-const CACHE_NAME = 'acordesss-v1';
+const CACHE_NAME = 'losacordes-v1.2.2';
 
 const urlsToCache =[
   "./",
@@ -8,7 +8,9 @@ const urlsToCache =[
   "./icon-192.png",
   "./icon-512.png",
   "./js/actualizacion.js",
+  "./js/canciones.js",
   "./js/darkmode.js",
+  "./js/instalar.js",
   "./js/player.js",
   "./js/searchbar.js",
 
@@ -72,18 +74,41 @@ const urlsToCache =[
 ];
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache)));
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(urlsToCache))
+      .then(() => self.skipWaiting()) // Force the new service worker to activate immediately
+  );
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames.map(cache => {
+          if (cache !== CACHE_NAME) {
+            return caches.delete(cache);
+          }
+        })
+      );
+    }).then(() => self.clients.claim()) // Forces all open pages to use this new service worker
+  );
 });
 
 self.addEventListener('fetch', event => {
   event.respondWith(
     fetch(event.request)
       .then(response => {
+        if (!response || response.status !== 200 || response.type !== 'basic') {
+          return response;
+        }
+
         const responseClone = response.clone();
         caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
         return response;
       })
       .catch(() => {
+        // Fall back to cache if online
         return caches.match(event.request);
       })
   );
