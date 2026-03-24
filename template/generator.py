@@ -21,18 +21,19 @@ def crear_archivo(titulo, artista, escala, bpm, inicio_acordes, fin_acordes):
         acordes=acordes,
         letra=letra)
     with open("../songs/"+nombre_archivo+".html", "w", encoding="utf-8") as f: f.write(rellenado)
-    print("{"+f" title: \"{titulo}<span class='soft'><br/>{artista}<br/></span>\", link: \"{nombre_archivo}.html\" "+"},")
+    canciones.append("  {"+f" title: \"{titulo}<span class='soft'><br/>{artista}<br/></span>\", link: \"{nombre_archivo}.html\" "+"},")
 
 
 with open("song-template.html", "r", encoding="utf-8") as f: plantilla = f.read()
 
 pdfs = []
+canciones = ["export const canciones = ["]
 for archivo in Path("../song-data/").iterdir():
     if archivo.is_file() and archivo.name[-4:] == ".pdf":
         pdfs.append(archivo.name[:-4])
 
-for archivo in Path("../song-data/").iterdir():
-    if archivo.is_file() and archivo.name[-3:] == ".md":
+for archivo in sorted(Path("../song-data/").iterdir(), key=lambda p: p.name.lower()):
+    if archivo.is_file() and archivo.name.endswith(".md"):
         with archivo.open("r", encoding="utf-8") as f: lineas = f.readlines()
 
         titulo= lineas[0][2:-1]
@@ -46,3 +47,6 @@ for archivo in Path("../song-data/").iterdir():
                 fin_acordes = posicion+6
                 break
         crear_archivo(titulo, artista, escala, bpm, inicio_acordes, fin_acordes)
+
+canciones.append('];')
+with open("../js/canciones.js", "w", encoding="utf-8") as f: f.write('\n'.join(canciones))

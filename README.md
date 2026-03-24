@@ -1,8 +1,9 @@
 # Los Acordes
 Disponible en [losacordes.github.io](https://losacordes.github.io/)
 ### Características:
-- Búsqueda de canciones por título o autor.
-- Información sobre las canciones:
+- *Progressive Web App* **instalable** en todas las principales plataformas, para una mejor experiencia y un **acceso sin conexión**.
+- **Búsqueda** de canciones por título o autor.
+- **Información** sobre las canciones:
     - Autor
     - BPM
     - Escala
