@@ -7,18 +7,20 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Los Acordesss 🗣️</title>
   <meta name="description" content="Se acabó el problema de no saberse los acordes :) ">
-  <link rel="icon" type="image/png" href="/icon-192.png">
+  <link rel="icon" type="image/png" href="./icon-192.png">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="icon" type="image/png" href="icon-192.png">
   <link rel="stylesheet" href="style.css"/>
   <script type="text/javascript" src="js/darkmode.js" defer></script>
   <script type="module" src="js/searchbar.js"></script>
   <script type="text/javascript" src="js/actualizacion.js" defer></script>
   <script type="text/javascript" src="js/instalar.js" defer></script>
-  <link rel="manifest" href="./manifest.json"/>
+  <link rel="manifest" href="manifest.json"/>
   <meta name="theme-color" content="#fff8f0">
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('js/sw.js');
+        navigator.serviceWorker.register('sw.js');
       });
     }
   </script>
