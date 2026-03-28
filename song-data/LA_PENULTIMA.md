@@ -10,7 +10,7 @@ G  - % - E  - %
 
 [Estribillo/Vers]
 Am - Dm - G - C
-F - Dm - E - %
+F  - Dm - E - %
 
 [Preestribillo]
 Dm - G - C - Am [x3]

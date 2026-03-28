@@ -4,11 +4,11 @@
 - 93 BPM
 
 ```
-Intro Piano: Dbmaj7
+[Intro Piano] Dbmaj7
 
 [Intro/Verse/Outro]
-Gb Ebm Bbm Db
-Gb Ebm Db Bbm
+Gb - Ebm - Bbm - Db
+Gb - Ebm - Db  - Bbm
 
 [Chorus]
 Gb - Ebm - Db  - Bbm [x2]

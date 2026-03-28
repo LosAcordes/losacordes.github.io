@@ -5,7 +5,7 @@
 
 ```
 [Intro, Verse i Bridge]
-Cmaj7 Bm Am Bm - Em7 [x3]
+Cmaj7 Bm Am - Bm Em7 [x3]
 F/G - %
 
 [Chorus]

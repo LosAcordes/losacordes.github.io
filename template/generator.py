@@ -4,6 +4,17 @@ def remove_accents(string): return "".join(c for c in unicodedata.normalize("NFD
 
 def crear_archivo(titulo, artista, escala, bpm, inicio_acordes, fin_acordes):
     acordes = ''.join(lineas[inicio_acordes+1:fin_acordes])[:-1]
+    j = 0
+    for i, caracter in enumerate(acordes):
+        if caracter in "[(":
+            acordes = acordes[:i+j] + "<span class='nota'>" + acordes[i+j:]
+            j += 19
+        elif caracter in "])":
+            acordes = acordes[:i+j+1] + "</span>" + acordes[i+j+1:]
+            j += 7
+
+    print(acordes)
+    print("=== === === ===")
     letra = ''.join(lineas[fin_acordes+2:-1])[:-1]
     nombre_archivo = archivo.name[:-3]
 
