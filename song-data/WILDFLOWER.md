@@ -19,7 +19,7 @@ F#m - A[Verse 2 / Pre-Chorus 2]
 Dmaj7 - C#m7 - F#m - E[x3]
 
 [Chorus 2 / Post-Chorus]
-Dmaj7 - E - C#7 - F#m - E [x4][Outro 1 / Outro 2 (Fade In)]
+Dmaj7 - E - C#7 - F#m - E [x4]
 Dmaj7 - E - C#7 - F#m
 Dmaj7 - E - C#7 - F#m - E [x2]
 Dmaj7 - E - C#7 - F#m

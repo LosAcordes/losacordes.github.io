@@ -26,8 +26,8 @@ Gb Ab - Bbm - Bbm
 Ebm F - Gb Ab - Bbm
 Ebm F - Gb Ab
 
-[Outro / Fade Out]
-Ebm F - Gb Ab - Bbm [Repeat to fade]
+[Outro]
+Ebm F - Gb Ab - Bbm
 ```
 
 You could never know what it's like
