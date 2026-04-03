@@ -1,4 +1,4 @@
-const CACHE_NAME = 'losacordes-v1.2.5';
+const CACHE_NAME = 'losacordes-v1.2.6';
 
 const urlsToCache =[
   "./",
@@ -51,6 +51,7 @@ const urlsToCache =[
   "./song-data/Fent_voltes_per_Palma.pdf",
   "./song-data/I'm_Still_Standing.pdf",
   "./song-data/Jumping_Jack_Flash.pdf",
+  "./song-data/Nakamarra.pdf",
   "./song-data/September.pdf",
   "./song-data/WILDFLOWER.pdf",
 

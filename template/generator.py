@@ -13,8 +13,6 @@ def crear_archivo(titulo, artista, escala, bpm, inicio_acordes, fin_acordes):
             acordes = acordes[:i+j+1] + "</span>" + acordes[i+j+1:]
             j += 7
 
-    print(acordes)
-    print("=== === === ===")
     letra = ''.join(lineas[fin_acordes+2:-1])[:-1]
     nombre_archivo = archivo.name[:-3]
 

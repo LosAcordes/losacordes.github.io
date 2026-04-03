@@ -5,10 +5,10 @@
 
 ```
 [Intro]
-Dmaj7 - C#m7 - F#m
+Dmaj7 - C#m7 - F#m - %
 
 [Verse 1 / Pre-Chorus 1]
-Dmaj7 - C#m7 - F#m
+Dmaj7 - C#m7 - F#m - %
 Dmaj7 - C#m7 - F#m - E [x2]
 Dmaj7 - C#m7 - F#m
 

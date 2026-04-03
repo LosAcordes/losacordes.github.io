@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" href="../icon-192.png">
   <link rel="stylesheet" href="../style.css"/>
   <script type="text/javascript" src="../js/darkmode.js" defer></script>
+  <script type="text/javascript" src="../js/transponer.js" defer></script>
   <script type="text/javascript" src="../js/player.js" defer></script>
   <script type="text/javascript" src="../js/fadein.js" defer></script>
   <link rel="manifest" href="../manifest.json"/>
@@ -43,18 +44,21 @@
 
       <div class="player">
         <audio id="audio" src="../audio/WILDFLOWER.mp3"></audio>
-        <button id="button">▶</button>
+        <button id="play">▶</button>
         <input type="range" id="bar" value="0">
         <span id="time">0:00 / 0:00</span>
       </div>
 
+      <button id="subir">+</button>
+      <button id="bajar">-</button>
+
       <div class="chords-scroll">
         <p class="chords">
 <span class='nota'>[Intro]</span>
-Dmaj7 - C#m7 - F#m
+Dmaj7 - C#m7 - F#m - %
 
 <span class='nota'>[Verse 1 / Pre-Chorus 1]</span>
-Dmaj7 - C#m7 - F#m
+Dmaj7 - C#m7 - F#m - %
 Dmaj7 - C#m7 - F#m - E <span class='nota'>[x2]</span>
 Dmaj7 - C#m7 - F#m
 
