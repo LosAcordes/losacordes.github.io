@@ -8,7 +8,7 @@
 Bm - D - D Em - Fm G
 
 [Verse, Chorus y Bridge]
-G  - D -  A6  - Em Bm
+Em - Bm - G - D A6
 ```
 
 If you don't wanna see me

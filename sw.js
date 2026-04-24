@@ -1,4 +1,4 @@
-const CACHE_NAME = 'losacordes-v1.2.7';
+const CACHE_NAME = 'losacordes-v1.2.8';
 
 const urlsToCache =[
   "./",
@@ -47,12 +47,15 @@ const urlsToCache =[
   "./audio/Zapatillas.mp3",
 
   "./song-data/back_to_friends.pdf",
+  "./song-data/Die_With_A_Smile.pdf",
   "./song-data/Don't_Start_Now.pdf",
   "./song-data/Fent_voltes_per_Palma.pdf",
   "./song-data/I'm_Still_Standing.pdf",
   "./song-data/Jumping_Jack_Flash.pdf",
+  "./song-data/Mr_PC.pdf",
   "./song-data/Nakamarra.pdf",
   "./song-data/September.pdf",
+  "./song-data/There_Will_Never_Be_Another_You.pdf",
   "./song-data/WILDFLOWER.pdf",
 
   "./songs/Al_mar!.html",
