@@ -11,4 +11,5 @@ Disponible en [losacordes.github.io](https://losacordes.github.io/)
     - Letra
     - Audio
 - Modo claro y oscuro, recordado por el navegador.
+- Cambio de tono del audio y los acordes.
 - Páginas de las canciones generadas automáticamente por [un programa de python](template/generator.py), que interpreta [una lista de canciones](song-data/) (declaradas en *Markdown* para su sencilla navegación y edición).

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'losacordes-v1.2.8';
+const CACHE_NAME = 'losacordes-v1.2.9';
 
 const urlsToCache =[
   "./",
@@ -101,7 +101,7 @@ self.addEventListener('install', event => {
           }
         }
       })
-      .then(() => self.skipWaiting()) 
+      .then(() => self.skipWaiting())
   );
 });
 

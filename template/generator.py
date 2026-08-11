@@ -1,6 +1,6 @@
 from pathlib import Path
 import unicodedata
-def remove_accents(string): return "".join(c for c in unicodedata.normalize("NFD", string) if not unicodedata.combining(c)) 
+def remove_accents(string): return "".join(c for c in unicodedata.normalize("NFD", string) if not unicodedata.combining(c))
 
 def crear_archivo(titulo, artista, escala, bpm, inicio_acordes, fin_acordes):
     acordes = ''.join(lineas[inicio_acordes+1:fin_acordes])[:-1]
