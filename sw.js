@@ -1,4 +1,4 @@
-const CACHE_NAME = 'losacordes-v1.2.9';
+const CACHE_NAME = 'losacordes-v1.2.10';
 
 const urlsToCache =[
   "./",
@@ -92,16 +92,20 @@ const urlsToCache =[
 
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(async (cache) => {
-        for (let url of urlsToCache) {
+    caches.open(CACHE_NAME).then(async (cache) => {
+      await Promise.allSettled(
+        urlsToCache.map(async (url) => {
           try {
-            await cache.add(url);
-          } catch (e) {
+            const response = await fetch(url);
+            if (response.ok) {
+              await cache.put(url, response);
+            }
+          } catch (err) {
+            console.error(`Failed to cache ${url}:`, err);
           }
-        }
-      })
-      .then(() => self.skipWaiting())
+        })
+      );
+    }).then(() => self.skipWaiting())
   );
 });
 
@@ -120,24 +124,22 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
+  if (event.request.method !== 'GET') return;
   event.respondWith(
     caches.match(event.request, { ignoreSearch: true }).then(cachedResponse => {
       if (cachedResponse) {
         return cachedResponse;
       }
 
-      return fetch(event.request)
-        .then(networkResponse => {
-          if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
-            const responseToCache = networkResponse.clone();
-            caches.open(CACHE_NAME).then(cache => {
-              cache.put(event.request, responseToCache);
-            });
-          }
-          return networkResponse;
-        })
-        .catch(error => {
-        });
+      return fetch(event.request).then(networkResponse => {
+        if (networkResponse && networkResponse.status === 200) {
+          const responseToCache = networkResponse.clone();
+          caches.open(CACHE_NAME).then(cache => {
+            cache.put(event.request, responseToCache);
+          });
+        }
+        return networkResponse;
+      });
     })
   );
 });

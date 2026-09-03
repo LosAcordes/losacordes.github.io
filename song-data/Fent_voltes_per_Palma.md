@@ -1,6 +1,6 @@
 # Fent voltes per Palma
 - Xanguito & Tomeu Penya
-- C
+- Cm
 - 123 BPM
 
 ```

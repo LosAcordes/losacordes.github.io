@@ -69,6 +69,8 @@ a:hover {
 #theme-switch svg{ fill: var(--text-color); }
 #theme-switch:hover svg{ fill: var(--accent-color); }
 #theme-switch svg:last-child{ display: none; }
+body.darkmode #theme-switch svg:first-child { display: none; }
+body.darkmode #theme-switch svg:last-child { display: block; }
 
 
 h2 { margin-bottom: 10px; }

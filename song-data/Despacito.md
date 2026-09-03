@@ -1,6 +1,6 @@
 # Despacito
 - Luis Fonsi
-- C
+- Bm
 - 89 BPM
 
 ```

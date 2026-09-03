@@ -1,6 +1,6 @@
 # Mari Carmen
 - La Pegatina
-- C
+- Dm
 - 160 BPM
 
 ```
